@@ -125,7 +125,130 @@ table {
   border-spacing: 0;
 }
 
+/* ----------------------------------------------------------------------- */
+
 /* DEFAULT STYLES */
+body {
+  background-image: url("../images/Background.png");
+  background-size: cover;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 2px solid white;
+}
+
+header > a {
+  width: 30%;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 0px;
+  border: 1px solid white;
+}
+
+footer > div {
+  text-align: center;
+  padding: 20px;
+}
+
+footer > div > a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8px;
+}
+
+.fold-out-menu {
+  display: none;
+}
+
+main {
+  min-height: 80vh;
+}
+
+/* DASHBOARD */
+
+#welcome-section {
+  background-image: url("../images/cupcakes.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+#welcome-section div {
+  padding: 80px 40px;
+  font-size: 20px;
+}
+
+/* RECIPES */
+
+#recipe-section h1 {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+/* FAQ */
+
+#faq-section {
+  margin: 30px 20px;
+}
+
+#faq-section > h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#faq-section > ul {
+  list-style-type: circle;
+}
+
+#faq-section li {
+  margin: 30px 20px;
+  text-align: left;
+}
+
+#faq-section h3 {
+  font-size: 25px;
+}
+
+/* SIGN UP PAGE & LOG IN PAGE */
+
+.form > h1 {
+  margin: 20px 0px;
+}
+
+.form > form {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form > form > input {
+  margin: 10px;
+  width: 70%;
+}
+
+.form > form > button {
+  padding: 10px;
+  margin: 30px;
+  background-color: #91d8d8;
+  border-color: white;
+  color: white;
+}
 
 /* MEDIA QUERIES */
 
@@ -133,8 +256,113 @@ table {
 
 /* From 768px and up */
 @media (min-width: 768px) {
+  #welcome-section {
+    background-image: url("../images/cupcakes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+  }
+
+  #welcome-section div {
+    padding: 80px 40px;
+    font-size: 40px;
+  }
+
+  #recipe-section h1 {
+    margin-top: 70px;
+    font-size: 50px;
+  }
+
+  #faq-section h1 {
+    font-size: 50px;
+    margin-bottom: 80px;
+  }
+
+  #faq-section h3 {
+    font-size: 40px;
+  }
+
+  #faq-section p {
+    font-size: 20px;
+  }
+
+  .form > h1 {
+    margin: 40px 0px;
+  }
+
+  .form > form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form > form > input {
+    margin: 20px;
+    padding: 15px;
+    width: 70%;
+  }
+
+  .form > form > button {
+    font-size: 20px;
+    padding: 20px;
+    margin: 30px;
+    background-color: #91d8d8;
+    border-color: white;
+  }
+
+  .form p {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .form label {
+    font-size: 20px;
+  }
 }
 
 /* From 1024px and up */
 @media (min-width: 1024px) {
+  #welcome-section {
+    background-image: url("../images/cupcakes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+  }
+
+  .fold-out-menu {
+    display: inline-block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+  }
+
+  .logo {
+    width: 60%;
+    height: auto;
+    position: relative;
+    left: 0px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 20px;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+  }
 }

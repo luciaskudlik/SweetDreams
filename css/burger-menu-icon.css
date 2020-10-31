@@ -1,0 +1,31 @@
+.burger-menu {
+  width: 40px;
+  height: auto;
+  position: relative;
+  bottom: 10px;
+  right: 0px;
+}
+
+.burger-menu > span {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+}
+
+.burger-menu > span:nth-child(1) {
+  top: 10px;
+}
+
+.burger-menu > span:nth-child(2) {
+  top: 20px;
+}
+
+.burger-menu-icon > span:nth-child(3) {
+  top: 30px;
+}
