@@ -1,8 +1,6 @@
 # Sweet Dreams - M1 Project
 
-![cupcakes](/Users/luciaskudlik/Documents/IRONHACK/sweetDreams/moduleOneProject-SweetDreams/images/cupcakes.jpg)
-
-
+![cupcakes](/images/cupcakes.jpg)
 
 ## Description
 
@@ -12,20 +10,21 @@ Sweet Dreams has been developed as a part of the Ironhack Web Developement bootc
 
 ## Minimum Viable Product
 
-* Homepage: includes all the links to navigate around the page aswell as a simple welcome text to describe the functionality of the page.
+- Homepage: includes all the links to navigate around the page aswell as a simple welcome text to describe the functionality of the page.
 
-*	Recipe Page: includes 60 different desserts with title, picture, instructions and maybe ingredients
+- Recipe Page: includes 60 different desserts with title, picture, instructions and maybe ingredients
 
-*	FAQ: Frequently Asked Questions and Information about the used API
+- FAQ: Frequently Asked Questions and Information about the used API
 
-*	Sign-up: Sign-up page
+- Sign-up: Sign-up page
 
-*	Log In: Log-in page
+- Log In: Log-in page
 
 ## Backlog
 
 - DIY-page: Create your own recipe
-- Access ingredients form API and add to recipe
+- Access ingredients from API and add to recipe
+- Hide answers in FAQ and make them appear when questions is clicked.
 
 ## Wireframes
 
@@ -43,12 +42,12 @@ Sweet Dreams has been developed as a part of the Ironhack Web Developement bootc
     - burger-menu-icon.css
     - main.css
   - src/
-    + Main.js
-    + Login.js
-    + Database.js
-    + Signup.js
-    + User.js
-    + Validator.js
+    - Main.js
+    - Login.js
+    - Database.js
+    - Signup.js
+    - User.js
+    - Validator.js
   - images/
 
 ## API
