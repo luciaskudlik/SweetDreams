@@ -157,6 +157,7 @@ header > a {
   position: relative;
   left: 0px;
   border: 1px solid white;
+  border-radius: 2px;
 }
 
 footer > div {
@@ -177,10 +178,20 @@ footer > div > a {
   display: none;
 }
 
+@keyframes moveToCenter {
+  0% {
+    right: 0;
+  }
+
+  100% {
+    right: 45vw;
+  }
+}
+
 .fold-out-menu {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   height: 200px;
   background-color: #91d8d8;
 }
@@ -189,6 +200,16 @@ footer > div > a {
   text-decoration: none;
   color: white;
   font-size: 40px;
+}
+
+.fold-out-menu li {
+  position: relative;
+  animation: moveToCenter 1s ease-in-out 0s alternate;
+  animation-fill-mode: forwards;
+}
+
+.fold-out-menu li > a:hover {
+  color: #ee836c;
 }
 
 /*--------------------*/
@@ -209,7 +230,7 @@ main {
 
 #welcome-section div {
   padding: 80px 40px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* RECIPES */
@@ -231,6 +252,7 @@ main {
   width: 200px;
   height: auto;
   border: 5px solid white;
+  margin-bottom: 10px;
 }
 
 /* FAQ */
@@ -289,6 +311,7 @@ main {
   border: 5px solid #91d8d8;
   width: 80%;
   margin: 0 auto;
+  /*display: none;*/
 }
 
 /* MEDIA QUERIES */
@@ -415,6 +438,10 @@ main {
     text-decoration: none;
     color: white;
     font-size: 40px;
+  }
+
+  nav li a:hover {
+    color: #91d8d8;
   }
 
   #recipes {

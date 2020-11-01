@@ -69,7 +69,7 @@ class Signup {
       p.style.padding = "10px";
       p.style.margin = "10px";
       p.textContent = str;
-
+      //this.errorsWrapper.style.display = "block";
       this.errorsWrapper.appendChild(p);
     });
   };

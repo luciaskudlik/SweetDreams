@@ -36,6 +36,7 @@ class Login {
     const p = document.createElement("p");
     p.style.color = "#EE836C";
     p.style.padding = "10px";
+    p.style.fontSize = "40px";
 
     // set the message
     if (!user) {
@@ -46,10 +47,9 @@ class Login {
       this.messageContainer.appendChild(p);
     } else {
       this.messageContainer.innerHTML = "";
-      p.innerHTML = `Welcome back, ${user.name}, we've missed you!`;
+      p.innerHTML = `Welcome back, ${user.name}! We are directing you to the main page ...`;
       this.messageContainer.appendChild(p);
 
-      //p.classList.add("correct-message");
       // Redirect to the dashboard page
       this.redirect();
     }
@@ -60,7 +60,7 @@ class Login {
   redirect = () => {
     setTimeout(function () {
       location.assign("dashboard.html");
-    }, 2000);
+    }, 4000);
 
     // setTimeout( () => location.assign("dashboard.html"), 2000)
   };
