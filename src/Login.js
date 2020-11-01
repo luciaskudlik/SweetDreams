@@ -8,22 +8,13 @@ class Login {
     this.loginButton = document.querySelector("#login-button");
   }
 
-  // handle the login (when user clicks the Login button)
   handleSubmit = (event) => {
-    // prevent the reload of the page ( form subit button reloads the page)
     event.preventDefault();
 
-    // get the values from the inputs
-    const email = this.emailInput.value; // sergi
-    const password = this.passwordInput.value; //  126
+    const email = this.emailInput.value;
+    const password = this.passwordInput.value;
 
-    // Get the users from db (localStorage)
     const users = db.getAllUsers();
-
-    // Check the password and email exist in the db (localStorage) -
-    // arr.find() - returns the first element that matches the experssion
-
-    // [ {uros  123},  {sergi  123}, {  tasha   123}   ]
 
     const user = users.find(function (userObj) {
       if (userObj.email === email && userObj.password === password) {
@@ -31,14 +22,12 @@ class Login {
       }
     });
 
-    // empty the container so that the messages don't add up
     //this.messageContainer.innerHTML = "";
     const p = document.createElement("p");
     p.style.color = "#EE836C";
     p.style.padding = "10px";
     p.style.fontSize = "40px";
 
-    // set the message
     if (!user) {
       this.messageContainer.innerHTML = "";
       p.innerHTML = "Email or password are incorrect!";
@@ -50,7 +39,6 @@ class Login {
       p.innerHTML = `Welcome back, ${user.name}! We are directing you to the main page ...`;
       this.messageContainer.appendChild(p);
 
-      // Redirect to the dashboard page
       this.redirect();
     }
 
@@ -61,8 +49,6 @@ class Login {
     setTimeout(function () {
       location.assign("dashboard.html");
     }, 4000);
-
-    // setTimeout( () => location.assign("dashboard.html"), 2000)
   };
 }
 

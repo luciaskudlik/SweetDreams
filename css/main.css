@@ -129,9 +129,11 @@ table {
 
 /* DEFAULT STYLES */
 body {
-  background-image: url("../images/Background.png");
+  /*background-image: url("../images/Background.png");
   background-size: cover;
-  background-position: center;
+  background-position: center;*/
+  background-color: #ee836c;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%23d26f4c' fill-opacity='0.77' fill-rule='evenodd'/%3E%3C/svg%3E");
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   color: white;
@@ -283,6 +285,7 @@ main {
 
 .form > h1 {
   margin: 20px 0px;
+  font-size: 30px;
 }
 
 .form > form {
@@ -296,6 +299,14 @@ main {
   margin: 10px;
   width: 70%;
   padding: 10px;
+}
+
+.form p {
+  font-size: 25px;
+}
+
+.form label {
+  font-size: 18px;
 }
 
 .form > form > button {
@@ -358,11 +369,12 @@ main {
   }
 
   #faq-section p {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .form > h1 {
     margin: 40px 0px;
+    font-size: 40px;
   }
 
   .form > form {
@@ -387,12 +399,12 @@ main {
   }
 
   .form p {
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 20px;
   }
 
   .form label {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
