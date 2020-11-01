@@ -43,6 +43,7 @@ Sweet Dreams has been developed as a part of the Ironhack Web Developement bootc
     - main.css
   - src/
     - Main.js
+    - Navbar.js
     - Login.js
     - Database.js
     - Signup.js

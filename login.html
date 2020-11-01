@@ -23,7 +23,7 @@
           <span></span>
           <span></span>
         </div>
-        <div class="fold-out-menu">
+        <div class="menu nav-bar">
           <ul>
             <li><a href="recipes.html">Recipes</a></li>
             <li><a href="faq.html">FAQ</a></li>
@@ -38,13 +38,14 @@
       <h1>Log Yourself In:</h1>
       <form class="login-form" action="">
         <input type="text" id="name" placeholder="Your First Name" />
-        <input type="text" id="email" placeholder="Email" />
-        <input type="password" id="password" placeholder="Password" />
+        <input type="text" id="login-email" placeholder="Email" />
+        <input type="password" id="login-password" placeholder="Password" />
 
-        <button type="submit" class="button" id="signup-button">
+        <button type="submit" class="button" id="login-button">
           Let me in, please
         </button>
       </form>
+      <div class="message-container"></div>
     </main>
 
     <footer>
@@ -55,7 +56,7 @@
 
     <script src="src/Database.js"></script>
     <script src="src/Login.js"></script>
-    <script src="src/Main.js"></script>
+    <script src="src/navbar.js"></script>
     <script src="src/Signup.js"></script>
     <script src="src/User.js"></script>
     <script src="src/Validator.js"></script>

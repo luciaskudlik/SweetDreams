@@ -131,6 +131,7 @@ table {
 body {
   background-image: url("../images/Background.png");
   background-size: cover;
+  background-position: center;
   font-family: "Amatic SC", cursive;
   font-weight: 700;
   color: white;
@@ -170,9 +171,27 @@ footer > div > a {
   font-size: 8px;
 }
 
-.fold-out-menu {
+/*burger fold out menu*/
+
+.nav-bar {
   display: none;
 }
+
+.fold-out-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: #91d8d8;
+}
+
+.fold-out-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+}
+
+/*--------------------*/
 
 main {
   min-height: 80vh;
@@ -196,8 +215,22 @@ main {
 /* RECIPES */
 
 #recipe-section h1 {
-  margin-top: 50px;
-  font-size: 20px;
+  margin: 50px;
+  font-size: 30px;
+}
+
+.dessertElement {
+  margin: 20px;
+}
+
+.dessertElement > h3 {
+  padding: 10px;
+}
+
+.dessertImages {
+  width: 200px;
+  height: auto;
+  border: 5px solid white;
 }
 
 /* FAQ */
@@ -240,6 +273,7 @@ main {
 .form > form > input {
   margin: 10px;
   width: 70%;
+  padding: 10px;
 }
 
 .form > form > button {
@@ -248,6 +282,13 @@ main {
   background-color: #91d8d8;
   border-color: white;
   color: white;
+}
+
+.message-container {
+  background-color: white;
+  border: 5px solid #91d8d8;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* MEDIA QUERIES */
@@ -272,6 +313,16 @@ main {
   #recipe-section h1 {
     margin-top: 70px;
     font-size: 50px;
+  }
+
+  #recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .dessertElement {
+    max-width: 300px;
   }
 
   #faq-section h1 {
@@ -300,8 +351,8 @@ main {
 
   .form > form > input {
     margin: 20px;
-    padding: 15px;
-    width: 70%;
+    padding: 20px;
+    width: 40%;
   }
 
   .form > form > button {
@@ -334,7 +385,7 @@ main {
     margin: 0 auto;
   }
 
-  .fold-out-menu {
+  .nav-bar {
     display: inline-block;
   }
 
@@ -364,5 +415,25 @@ main {
     text-decoration: none;
     color: white;
     font-size: 40px;
+  }
+
+  #recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .dessertElement {
+    max-width: 300px;
+  }
+
+  .dessertImages {
+    width: 300px;
+  }
+
+  .form > form > input {
+    margin: 20px;
+    padding: 15px;
+    width: 30%;
   }
 }

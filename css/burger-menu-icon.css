@@ -1,16 +1,15 @@
 .burger-menu {
   width: 40px;
-  height: auto;
+  height: 100%;
   position: relative;
   bottom: 10px;
-  right: 0px;
 }
 
 .burger-menu > span {
   content: "";
   display: block;
   position: absolute;
-  height: 3px;
+  height: 4px;
   width: 100%;
   background: white;
   border-radius: 9px;
