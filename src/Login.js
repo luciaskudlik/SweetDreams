@@ -23,6 +23,7 @@ class Login {
     });
 
     //this.messageContainer.innerHTML = "";
+    //Create Error or welcome message plus styling:
     const p = document.createElement("p");
     p.style.color = "#EE836C";
     p.style.padding = "10px";
@@ -41,13 +42,11 @@ class Login {
 
       this.redirect();
     }
-
-    this.messageContainer.appendChild(p);
   };
 
   redirect = () => {
     setTimeout(function () {
-      location.assign("dashboard.html");
+      location.assign("index.html");
     }, 4000);
   };
 }

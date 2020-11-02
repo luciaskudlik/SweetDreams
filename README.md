@@ -33,7 +33,7 @@ Sweet Dreams has been developed as a part of the Ironhack Web Developement bootc
 ## Data structure
 
 - root/
-  - dashboard.html
+  - index.html
   - recipes.html
   - faq.html
   - signup.html

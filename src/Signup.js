@@ -25,10 +25,13 @@ class Signup {
 
   handlePasswordInput = (event) => {
     const passwordInput = event.target;
+    const repeatPasswordInput = this.repeatPasswordInput;
 
     const password = passwordInput.value;
+    const repeatPassword = repeatPasswordInput.value;
 
     validator.validatePassword(password);
+    validator.validateRepeatPassword(password, repeatPassword);
 
     this.setErrorMessages();
   };
@@ -40,6 +43,7 @@ class Signup {
     const password = passwordInput.value;
     const repeatPassword = repeatPasswordInput.value;
 
+    //validator.validatePassword(password);
     validator.validateRepeatPassword(password, repeatPassword);
 
     this.setErrorMessages();
