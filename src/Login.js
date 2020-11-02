@@ -7,7 +7,7 @@ class Login {
     this.messageContainer = document.querySelector(".message-container");
     this.loginButton = document.querySelector("#login-button");
   }
-
+  
   handleSubmit = (event) => {
     event.preventDefault();
 
@@ -47,7 +47,7 @@ class Login {
 
   redirect = () => {
     setTimeout(function () {
-      location.assign("dashboard.html");
+      location.assign("index.html");
     }, 4000);
   };
 }
