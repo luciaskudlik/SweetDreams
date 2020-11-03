@@ -154,7 +154,7 @@ header > a {
 }
 
 .logo {
-  width: 100%;
+  width: 70%;
   height: auto;
   position: relative;
   left: 0px;
@@ -257,6 +257,14 @@ main {
   margin-bottom: 10px;
 }
 
+.hideInstructions {
+  display: none;
+}
+
+.displayInstructions {
+  display: block;
+}
+
 /* FAQ */
 
 #faq-section {
@@ -331,6 +339,14 @@ main {
 
 /* From 768px and up */
 @media (min-width: 768px) {
+  header {
+    height: 70px;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
   #welcome-section {
     background-image: url("../images/cupcakes.jpg");
     background-position: center;

@@ -21,7 +21,9 @@ fetch("https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert")
       const image = document.createElement("img");
       title.innerHTML = dessertTitle;
       image.setAttribute("src", imageSource);
-      image.classList.add("dessertImages");
+      image.classList.add("dessertImages", "card");
+      //image.classList.add("card");
+      //image.id = "card";
       newDessertElement.appendChild(title);
       newDessertElement.appendChild(image);
       newDessertElement.classList.add("dessertElement");
@@ -38,6 +40,9 @@ fetch("https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert")
         })
         .then((data) => {
           const instructionsCard = document.createElement("div");
+          //instructionsCars.id = idArray[index];
+          instructionsCard.classList.add("instructions");
+          instructionsCard.classList.add("hideInstructions");
           instructionsCard.innerHTML = data.meals[0].strInstructions;
           newDessertElement.appendChild(instructionsCard);
         })
@@ -46,6 +51,21 @@ fetch("https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert")
         });
 
       //============================================================
+    });
+  })
+  .then(() => {
+    function turnCard(event) {
+      console.log(dessertPic);
+      console.log("EVENT TARGET:", event.target);
+      const index = event.target.id;
+      const instructionsCard = document.querySelectorAll(".instructions");
+      instructionsCard[index].classList.toggle("hideInstructions");
+    }
+
+    const dessertPic = document.querySelectorAll(".card");
+    dessertPic.forEach((dessert, index) => {
+      dessert.id = index.toString();
+      dessert.addEventListener("click", turnCard);
     });
   })
   .catch((err) => {
