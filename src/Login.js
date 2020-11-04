@@ -7,7 +7,7 @@ class Login {
     this.messageContainer = document.querySelector(".message-container");
     this.loginButton = document.querySelector("#login-button");
   }
-
+  
   handleSubmit = (event) => {
     event.preventDefault();
 
