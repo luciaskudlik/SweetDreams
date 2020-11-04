@@ -242,6 +242,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 30px;
+  font-size: 30px;
 }
 
 #searchform {
@@ -274,6 +275,13 @@ main {
   display: none;
 }
 
+.recipe-instructions {
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 25px;
+  margin: 20px;
+}
+
 #recipe-section h1 {
   margin: 50px;
   font-size: 30px;
@@ -292,7 +300,7 @@ main {
   width: 200px;
   height: auto;
   border: 5px solid white;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .hideInstructions {

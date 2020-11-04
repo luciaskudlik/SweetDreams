@@ -4,7 +4,7 @@
 
 ## Description
 
-You have a sweet Tooth and a passion for baking and creating delicious desserts? This is the page for you! It provides you with over 50 different desserts and even gives you the possibility to create your very own dish and share it with the other users! Throw on the oven and enjoy!!
+You have a sweet Tooth and a passion for baking and creating delicious desserts? This is the page for you! It provides you with over 50 different desserts and even gives you the possibility to search for your very own favorite meal including Lunch and Dinner! Throw on the oven and enjoy!!
 
 Sweet Dreams has been developed as a part of the Ironhack Web Developement bootcamp with TheMealDB API.
 
