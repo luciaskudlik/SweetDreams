@@ -50,6 +50,12 @@ function showDessert() {
     })
     .catch((err) => {
       console.log(err);
+      const resultSection = document.getElementById("searchresult");
+      const errorMessage = document.createElement("p");
+      errorMessage.style.fontSize = "30px";
+      errorMessage.innerHTML =
+        "Sorry, we couldn't find any recipes matching your search.";
+      resultSection.appendChild(errorMessage);
     });
   const hideButton = document.getElementById("hidebutton");
 

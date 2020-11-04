@@ -60,6 +60,8 @@ class Signup {
       const p = document.createElement("p");
       p.style.color = "red";
       p.style.fontFamily = "Arial";
+      p.style.fontSize = "15px";
+      p.style.fontWeight = "lighter";
       p.style.border = "2px solid red";
       p.style.padding = "10px";
       p.style.margin = "10px";

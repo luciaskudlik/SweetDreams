@@ -2,13 +2,12 @@
 
 class Validator {
   constructor() {
-    this.invalidEmailError = "Your email address is wrong!!!!";
+    this.invalidEmailError = "Your email address is wrong.";
     this.emailExistsError =
-      "We already have someone signed up with us with that exact email adress!!";
-    this.passwordError =
-      "Dude, think of a password with 10 characters, it's not that hard.";
+      "We already have someone signed up with us with that exact email adress.";
+    this.passwordError = "Dude, think of a password with 10 characters.";
     this.repeatPasswordError =
-      "Wrong! The Password has to be the same in both fields!";
+      "Wrong! The Password has to be the same in both fields.";
 
     this.errors = {
       emailExistsError: this.emailExistsError,

@@ -379,7 +379,7 @@ main {
 
 .message-container {
   background-color: white;
-  border: 5px solid #91d8d8;
+  padding: 5px;
   width: 80%;
   margin: 0 auto;
   /*display: none;*/
