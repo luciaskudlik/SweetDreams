@@ -49,6 +49,7 @@ Sweet Dreams has been developed as a part of the Ironhack Web Developement bootc
     - Signup.js
     - User.js
     - Validator.js
+    - faq.js
   - images/
 
 ## API

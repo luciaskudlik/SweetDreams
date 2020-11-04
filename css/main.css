@@ -186,7 +186,7 @@ footer > div > a {
   }
 
   100% {
-    right: 45vw;
+    right: 42.5vw;
   }
 }
 
@@ -243,6 +243,7 @@ main {
   align-items: center;
   margin: 30px;
   font-size: 30px;
+  width: 90vw;
 }
 
 #searchform {
@@ -250,7 +251,7 @@ main {
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid white;
-  margin: 40px;
+  margin: 40px 10px;
   padding: 20px;
 }
 
@@ -278,12 +279,11 @@ main {
 .recipe-instructions {
   border: 1px solid white;
   padding: 20px;
-  font-size: 25px;
-  margin: 20px;
+  font-size: 20px;
 }
 
 #recipe-section h1 {
-  margin: 50px;
+  margin: 20px 0px;
   font-size: 30px;
 }
 
@@ -434,10 +434,19 @@ main {
 
   #faq-section h3 {
     font-size: 40px;
+    color: #91d8d8;
   }
 
   #faq-section p {
     font-size: 25px;
+  }
+
+  .answer {
+    display: none;
+  }
+
+  .displayAnswer {
+    display: block;
   }
 
   .form > h1 {
@@ -536,6 +545,10 @@ main {
 
   .dessertImages {
     width: 300px;
+  }
+
+  #faq-section {
+    margin: 100px;
   }
 
   .form > form > input {

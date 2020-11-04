@@ -56,11 +56,11 @@ function showDessert() {
   hideButton.style.display = "block";
 }
 
-function hideResults() {
+function hideResults(event) {
+  const hideButton = event.target;
+  hideButton.style.display = "none";
   const resultSection = document.getElementById("searchresult");
   resultSection.style.display = "none";
-  const hideButton = document.getElementById("hidebutton");
-  hideButton.style.display = "none";
 }
 
 const searchButton = document.getElementById("searchbutton");
