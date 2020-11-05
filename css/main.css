@@ -265,6 +265,8 @@ main {
   font-size: 20px;
   text-align: center;
   margin-bottom: 20px;
+  outline-color: white;
+  border: 3px solid #91d8d8;
 }
 
 #searchbutton,
@@ -274,6 +276,7 @@ main {
   background-color: #91d8d8;
   border: 1px solid white;
   margin: 10px;
+  outline-color: white;
 }
 
 #hidebutton {
@@ -373,10 +376,11 @@ main {
   margin: 10px;
   width: 70%;
   padding: 10px;
+  outline: none;
 }
 
 .form label {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .form > form > button {
@@ -385,25 +389,28 @@ main {
   background-color: #91d8d8;
   border-color: white;
   color: white;
+  outline-color: white;
 }
 
 .message-container {
-  background-color: white;
-  padding: 5px;
   width: 80%;
   margin: 0 auto;
-  border: 3px solid #91d8d8;
   display: none;
 }
 
 .error-message {
   color: red;
+  background-color: white;
   font-weight: lighter;
   font-family: Arial;
   font-size: 15px;
   border: 2px solid red;
   padding: 10px;
   margin: 10px;
+}
+
+.form p {
+  font-size: 30px;
 }
 
 /* MEDIA QUERIES */
@@ -498,10 +505,6 @@ main {
 
   .message-container {
     width: 40vw;
-  }
-
-  .form label {
-    font-size: 30px;
   }
 }
 

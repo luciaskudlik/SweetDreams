@@ -60,6 +60,7 @@ class Signup {
       const p = document.createElement("p");
       //p.classList.add("error-message");
       p.style.color = "red";
+      p.style.backgroundColor = "white";
       p.style.fontFamily = "Arial";
       p.style.fontSize = "15px";
       p.style.fontWeight = "lighter";

@@ -12,7 +12,7 @@ Sweet Dreams has been developed as a part of the Ironhack Web Developement bootc
 
 - Homepage: includes all the links to navigate around the page aswell as a simple welcome text to describe the functionality of the page.
 
-- Recipe Page: includes 60 different desserts with title, picture, instructions and maybe ingredients
+- Recipe Page: includes 60 different desserts with title, picture and instructions as well as a searchbar where the user can look for a specific recipe, including breakfast, lunch and dinner.
 
 - FAQ: Frequently Asked Questions and Information about the used API
 

@@ -30,11 +30,15 @@ class Login {
       this.messageContainer.innerHTML = "";
       p.innerHTML = "Email or password are incorrect!";
       p.classList.add("error-message");
+      p.style.fontSize = "15px";
       this.messageContainer.appendChild(p);
     } else {
+      this.messageContainer.style.backgroundColor = "white";
+      this.messageContainer.style.padding = "5px";
       p.style.color = "#EE836C";
       p.style.padding = "10px";
       p.style.fontSize = "40px";
+      p.style.border = "3px solid #91d8d8";
       this.messageContainer.style.display = "block";
       this.messageContainer.innerHTML = "";
       p.innerHTML = `Welcome back, ${user.name}! We are directing you to the main page ...`;
