@@ -58,6 +58,7 @@ class Signup {
 
     errorStringsArr.forEach((str) => {
       const p = document.createElement("p");
+      //p.classList.add("error-message");
       p.style.color = "red";
       p.style.fontFamily = "Arial";
       p.style.fontSize = "15px";
@@ -66,7 +67,7 @@ class Signup {
       p.style.padding = "10px";
       p.style.margin = "10px";
       p.textContent = str;
-      //this.errorsWrapper.style.display = "block";
+      this.errorsWrapper.style.display = "block";
       this.errorsWrapper.appendChild(p);
     });
   };

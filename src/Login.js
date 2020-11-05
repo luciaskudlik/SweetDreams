@@ -7,7 +7,7 @@ class Login {
     this.messageContainer = document.querySelector(".message-container");
     this.loginButton = document.querySelector("#login-button");
   }
-  
+
   handleSubmit = (event) => {
     event.preventDefault();
 
@@ -22,24 +22,23 @@ class Login {
       }
     });
 
-    //this.messageContainer.innerHTML = "";
     //Create Error or welcome message plus styling:
     const p = document.createElement("p");
-    p.style.color = "#EE836C";
-    p.style.padding = "10px";
-    p.style.fontSize = "40px";
 
     if (!user) {
+      this.messageContainer.style.display = "block";
       this.messageContainer.innerHTML = "";
       p.innerHTML = "Email or password are incorrect!";
-      p.style.color = "red";
-      p.style.fontFamily = "Arial";
+      p.classList.add("error-message");
       this.messageContainer.appendChild(p);
     } else {
+      p.style.color = "#EE836C";
+      p.style.padding = "10px";
+      p.style.fontSize = "40px";
+      this.messageContainer.style.display = "block";
       this.messageContainer.innerHTML = "";
       p.innerHTML = `Welcome back, ${user.name}! We are directing you to the main page ...`;
       this.messageContainer.appendChild(p);
-
       this.redirect();
     }
   };

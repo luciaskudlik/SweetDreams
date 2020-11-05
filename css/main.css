@@ -255,6 +255,10 @@ main {
   padding: 20px;
 }
 
+#searchform > h3 {
+  margin: 20px;
+}
+
 #searchbar {
   height: 10vh;
   width: 50vw;
@@ -319,6 +323,15 @@ main {
 
 /* FAQ */
 
+.answer {
+  display: none;
+}
+
+.displayAnswer {
+  display: block;
+  font-size: 20px;
+}
+
 #faq-section {
   margin: 30px 20px;
 }
@@ -338,7 +351,8 @@ main {
 }
 
 #faq-section h3 {
-  font-size: 25px;
+  font-size: 35px;
+  color: #91d8d8;
 }
 
 /* SIGN UP PAGE & LOG IN PAGE */
@@ -361,10 +375,6 @@ main {
   padding: 10px;
 }
 
-.form p {
-  font-size: 25px;
-}
-
 .form label {
   font-size: 18px;
 }
@@ -382,7 +392,18 @@ main {
   padding: 5px;
   width: 80%;
   margin: 0 auto;
-  /*display: none;*/
+  border: 3px solid #91d8d8;
+  display: none;
+}
+
+.error-message {
+  color: red;
+  font-weight: lighter;
+  font-family: Arial;
+  font-size: 15px;
+  border: 2px solid red;
+  padding: 10px;
+  margin: 10px;
 }
 
 /* MEDIA QUERIES */
@@ -417,6 +438,14 @@ main {
     font-size: 50px;
   }
 
+  #searchform > h3 {
+    font-size: 30px;
+  }
+
+  #recipe-section p {
+    font-size: 30px;
+  }
+
   #recipes {
     display: flex;
     flex-wrap: wrap;
@@ -439,14 +468,6 @@ main {
 
   #faq-section p {
     font-size: 25px;
-  }
-
-  .answer {
-    display: none;
-  }
-
-  .displayAnswer {
-    display: block;
   }
 
   .form > h1 {
@@ -475,9 +496,8 @@ main {
     border-color: white;
   }
 
-  .form p {
-    font-size: 35px;
-    margin-bottom: 20px;
+  .message-container {
+    width: 40vw;
   }
 
   .form label {
